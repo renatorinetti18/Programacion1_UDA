@@ -1,7 +1,15 @@
+//Hacer un programa que realice conversiones entre monedas (buscar
+//conversiones en Internet). Utilizar un menú como el que sigue:
+//	1. Pesos argentinos a dólar.
+//	2. Pesos argentinas a Peso chileno.
+//	3. Pesos argentinos a Libras esterlinas.
+//	4. Pesos argentinos a Sol Peruano.
+//	5. Pesos argentinos a Yuan.
+//	6. Salir
 Algoritmo conversion_monedas
 	
 	Definir pesos Como Real
-	Definir dolar, peso_chileno, libra_esterlina, sol_peruano, yuan Como Real
+	Definir resultado Como Real
 	Definir numero Como Entero
 	
 	Escribir "Ingrese una opcion de conversion: "
@@ -13,37 +21,36 @@ Algoritmo conversion_monedas
 	Escribir "[6]: Salir"
 	Leer numero
 	
-	Segun numero Hacer
-		1:
-			Escribir "Ingrese la cantidad de dinero a convertir: "
-			Leer pesos
-			dolar = pesos / 90
-			Escribir "Pesos argentinos: " pesos " a Dólar: " dolar
-			
-		2:
-			Escribir "Ingrese la cantidad de dinero a convertir: "
-			Leer pesos 
-			peso_chileno = pesos * 15.27
-			Escribir "Pesos argentinos: " pesos " a Pesos chilenos:" peso_chileno
-		3:
-			Escribir "Ingrese la cantidad de dinero a convertir: "
-			Leer pesos
-			libra_esterlina = pesos / 121
-			Escribir "Pesos argentinos:" pesos " a Libras esterlinas: " libra_esterlina
-		4:
-			Escribir "Ingrese la cantidad de dinero a convertir: "
-			Leer pesos
-			sol_peruano = pesos / 24.5
-			Escribir "Pesos argentinos: " pesos " a Sol Peruano: " sol_peruano
-		5:
-			Escribir "Ingrese la cantidad de dinero a convertir: "
-			Leer pesos
-			yuan = pesos / 14
-			Escribir "Pesos argentinos: " pesos " a Yuan: " yuan
-		6:
-			Escribir "Saliendo del programa... ¡Que tenga buen dia!"
-		De Otro Modo:
-			Escribir "Ups... ha ocurrido un error."
-	Fin Segun
+	//Manejo de errores con un Si
+	Si(numero < 1 O numero > 6) Entonces
+		Escribir "El numero ingresado no es valido."
+	SiNo
+		Escribir "Ingrese la cantidad de dinero a convertir: "
+		Leer pesos
+		
+		Segun numero Hacer
+			Caso 1:
+				resultado = pesos * 0.011
+				Escribir "Pesos argentinos: " pesos " a Dólar: " resultado
+			Caso 2:
+				resultado = pesos * 7.80
+				Escribir "Pesos argentinos: " pesos " a Pesos chilenos:" resultado
+			Caso 3:
+				resultado = pesos * 0.0079
+				Escribir "Pesos argentinos:" pesos " a Libras esterlinas: " resultado
+			Caso 4:
+				resultado = pesos * 0.041
+				Escribir "Pesos argentinos: " pesos " a Sol Peruano: " resultado
+			Caso 5:
+				resultado = pesos * 0.072
+				Escribir "Pesos argentinos: " pesos " a Yuan: " resultado
+			Caso 6:
+				Escribir "Saliendo del programa... ¡Que tenga buen dia!"
+				
+			De Otro Modo:
+				Escribir "El numero ingresado esta fuera del limite entre 1 y 6."
+		Fin Segun
+	FinSi	
+	
 	
 FinAlgoritmo
