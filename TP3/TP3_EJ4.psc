@@ -16,12 +16,15 @@ Algoritmo calculadora
 		
 		Si opcion == 1 Entonces
 			
+<<<<<<< HEAD
 			Escribir "Ingrese el primer valor: "
 			Leer variable1
 			
 			Escribir "Ingrese el segundo valor: "
 			Leer variable2
 			
+=======
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 			Escribir "Ingrese el tipo de operacion: "
 			Escribir "[1]: Suma"
 			Escribir "[2]: Resta"
@@ -31,32 +34,74 @@ Algoritmo calculadora
 			Escribir "[6]: Salir"
 			Leer operacion
 			
+<<<<<<< HEAD
 			Segun operacion Hacer
 				1:
+=======
+			//Condicional que verfica los numeros validos
+			
+			Si operacion == 4 Entonces
+				Repetir
+					Escribir "Ingrese el primer valor: "
+					Leer variable1
+					
+					Escribir "Ingrese el segundo valor: "
+					Leer variable2
+				Hasta Que variable1 > 0 Y variable2 > 0
+			SiNo
+				Escribir "Ingrese el primer valor: "
+				Leer variable1
+				
+				Escribir "Ingrese el segundo valor: "
+				Leer variable2
+			Fin Si
+			
+			Segun operacion Hacer
+				1:
+					Escribir ""
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					Escribir "SUMA"
 					suma = variable1 + variable2
 					Escribir ""
 					Escribir variable1 " + " variable2 " = " suma 
+<<<<<<< HEAD
 	
 				2:
+=======
+					
+				2:
+					Escribir ""
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					Escribir "RESTA"
 					resta = variable1 - variable2
 					Escribir ""
 					Escribir variable1 " - " variable2 " = " resta 
 					
 				3:
+<<<<<<< HEAD
+=======
+					Escribir ""
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					Escribir "MULTIPLICACION"
 					multiplicacion = variable1 * variable2
 					Escribir ""
 					Escribir variable1 " x " variable2 " = " multiplicacion
 					
 				4:
+<<<<<<< HEAD
+=======
+					Escribir ""
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					Escribir "DIVISION"
 					division = variable1 / variable2
 					Escribir ""
 					Escribir variable1 " ÷ " variable2 " = " division
 					
 				5:
+<<<<<<< HEAD
+=======
+					Escribir ""
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					Escribir "POTENCIA"
 					potencia = variable1^(variable2)
 					Escribir ""
@@ -67,8 +112,12 @@ Algoritmo calculadora
 					
 				De Otro Modo:
 					Escribir "Ups... Ha ocurrido un error. El numero ingresado no es valido"
+<<<<<<< HEAD
 			Fin Segun			
 			
+=======
+			Fin Segun
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 		SiNo
 			Escribir "Saliendo del programa"
 		Fin Si

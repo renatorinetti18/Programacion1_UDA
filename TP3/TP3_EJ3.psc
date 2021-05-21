@@ -12,14 +12,29 @@ Algoritmo suma_100numeros
 	// -La sumatoria de los números.
 	// -Consultar si desea continuar o finalizar el ejercicio
 
+<<<<<<< HEAD
 	Definir suma Como Entero
 	Definir contador Como Entero
+=======
+	Definir suma_para, suma_mientras, suma_repetir Como Entero
+	Definir contador_para, contador_mientras, contador_repetir Como Entero
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 	Definir opcion Como Entero
 	Definir eleccion Como Entero
 	
 	//Inicializo el contador en 1 y la suma en 0 para que al momento de realizar el calculo, este empieze en 1 y no en 0
+<<<<<<< HEAD
 	suma = 0
 	contador = 1
+=======
+	suma_para = 0
+	suma_mientras = 0
+	suma_repetir = 0
+	
+	contador_para = 1
+	contador_mientras = 1
+	contador_repetir = 1
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 	
 	Repetir
 		
@@ -40,6 +55,7 @@ Algoritmo suma_100numeros
 			
 			Segun opcion Hacer
 				1:
+<<<<<<< HEAD
 					Para contador<-1 Hasta 100 Con Paso 1 Hacer
 						suma = suma + contador
 					Fin Para
@@ -64,6 +80,32 @@ Algoritmo suma_100numeros
 					
 					Escribir "Opcion seleccionada: [1]: REPETIR"
 					Escribir "La suma de los 100 primeros numeros es: " suma
+=======
+					Para contador_para<-1 Hasta 100 Con Paso 1 Hacer
+						suma_para = suma_para + contador_para
+					Fin Para
+					
+					Escribir "Opcion seleccionada: [1]: PARA"
+					Escribir "La suma de los 100 primeros numeros es: " suma_para
+					
+				2:
+					Mientras contador_mientras <= 100 Hacer
+						suma_mientras = suma_mientras + contador_mientras
+						contador_mientras = contador_mientras + 1
+					Fin Mientras
+					
+					Escribir "Opcion seleccionada: [1]: MIENTRAS"
+					Escribir "La suma de los 100 primeros numeros es: " suma_mientras
+					
+				3:
+					Repetir
+						suma_repetir = suma_repetir + contador_repetir
+						contador_repetir = contador_repetir + 1
+					Hasta Que contador_repetir > 100 
+					
+					Escribir "Opcion seleccionada: [1]: REPETIR"
+					Escribir "La suma de los 100 primeros numeros es: " suma_repetir
+>>>>>>> 4f99db519c969ca11f7df71a1a1712bb31d57b1f
 					
 				4:
 					Escribir "Saliendo el programa"
